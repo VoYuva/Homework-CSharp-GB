@@ -2,7 +2,7 @@
 
 System.Console.Write("Enter your number, which should be greater than 1: ");
 int N = Convert.ToInt32(Console.ReadLine());
-int count = 2; //Так как 1 все равно не чётное и ен будет отображаться, то и смысла начинать с него нет.
+int count = 2; //Так как 1 все равно не чётное и не будет отображаться, то и смысла начинать с него нет.
 
 while (count <= N && N > 1)
 {
