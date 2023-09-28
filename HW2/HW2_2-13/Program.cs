@@ -1,36 +1,41 @@
 ﻿// Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет
 
+const int twoNumbersMinValue = 100;
+const int twoNumbersMaxValue = 999;
+const int divider = 10;
+
+
 int FindThirdDigit1 (int num) //Вариант 1
 {
-     if (num < 100)
+     if (num < twoNumbersMinValue)
     {
         return -1;
     }
 
-    while (num > 999)
+    while (num > twoNumbersMaxValue)
     {
-        num = num / 10;
+        num = num / divider;
     }
     
-    return num % 10;
+    return num % divider;
 }
 
 
 void FindThirdDigit2 (int num) //Вариант 2
 {
-     if (num < 100)
+     if (num < twoNumbersMinValue)
     {
         System.Console.WriteLine("Your number has not the third digit");
     }
 
     else
     {
-        while (num > 999)
+        while (num > twoNumbersMaxValue)
         {
-            num = num / 10;
+            num = num / divider;
         }
     
-        System.Console.WriteLine($"The third digit is: {num % 10}");
+        System.Console.WriteLine($"The third digit is: {num % divider}");
     }
 }
 
