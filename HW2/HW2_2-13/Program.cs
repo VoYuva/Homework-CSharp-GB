@@ -5,20 +5,20 @@ const int twoNumbersMaxValue = 999;
 const int divider = 10;
 
 
-int FindThirdDigit1 (int num) //Вариант 1
-{
-     if (num < twoNumbersMinValue)
-    {
-        return -1;
-    }
+// int FindThirdDigit1 (int num) //Вариант 1
+// {
+//      if (num < twoNumbersMinValue)
+//     {
+//         return -1;
+//     }
 
-    while (num > twoNumbersMaxValue)
-    {
-        num = num / divider;
-    }
+//     while (num > twoNumbersMaxValue)
+//     {
+//         num = num / divider;
+//     }
     
-    return num % divider;
-}
+//     return num % divider;
+// }
 
 
 void FindThirdDigit2 (int num) //Вариант 2
