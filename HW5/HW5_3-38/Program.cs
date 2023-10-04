@@ -16,7 +16,9 @@ public class Exs3_38
     {
         for(int i=0; i < array.Length; i++)
         {
-            array[i] = new Random().Next(1, 100);
+            //double rand = new Random;
+            array[i] = new Random().Next(100, 10000);
+            array[i]/=100;
         }
     }
     public static void PrintArray(double[] array)
@@ -25,15 +27,15 @@ public class Exs3_38
         {
             if (i == 0)
             {
-                Console.Write($"[{array[i]}, ");
+                Console.Write($"[{array[i]:F2}, ");
             }
             else if (i == array.Length - 1)
             {
-                Console.Write($"{array[i]}]");
+                Console.Write($"{array[i]:F2}]");
             }
             else
             {
-                Console.Write($"{array[i]}, ");
+                Console.Write($"{array[i]:F2}, ");
             }
         }
     }
@@ -52,6 +54,6 @@ public class Exs3_38
                 max = array[i];
             }
         }
-        Console.WriteLine($"{max} - {min} = {max-min}");
+        Console.WriteLine($"{max:F2} - {min:F2} = {max-min:F2}");
     }
 }
